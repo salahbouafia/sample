@@ -1,5 +1,6 @@
 
 import requests
 
-name = input('your name?')
-print("hello,", name)
+r = requests.get("httep://youtube.com")
+print(r.status_code)
+print(r.ok)
